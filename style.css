@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=KyivType+Sans&display=swap');
+
+:root{
+    --darkgreen: #254012;
+    --midgreen: #365912;
+    --green: #688c1b;
+    --lightgreen: #ADBF9B;
+    --white: #F2F2F2;
+    --krona: 'Krona One', 'sans-serif';
+    --kyiv: 'KyivType Sans', 'sans-serif';
+}
+
+body{
+    background-color: var(--white);
+}
+
+.navbar{
+    align-items:flex-end;
+    justify-content: space-around;
+    background-color: var(--lightgreen);
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+.heading1{
+    font-family: var(--krona);
+    font-size: 2.25rem;
+    color: var(--midgreen);
+    border: var(--lightgreen);
+    text-shadow: 2px 5px 4px rgba(0, 0, 0, 0.3);
+    transform: translateY(-18px);
+}
+
+.heading2{
+    font-family: var(--krona);
+    font-size: 1.5rem;
+    color: var(--darkgreen);
+    border: var(--lightgreen);
+}
+
+@media (max-width: 320px) {
+    .heading1{
+        font-size: 1.75rem;
+    }
+    .heading2{
+        font-size: 1.125rem;
+    }
+    .adscard-div-btn{
+        flex-direction: column;
+    }
+}
+
+.adscard{
+    background-color: var(--lightgreen);
+    border: none;
+    border-radius: none;
+}
+
+.adscard-title{
+    font-family: var(--kyiv);
+    font-size: .875rem;
+    font-weight: 700;
+    color: var(--darkgreen);
+}
+
+.adscard-text{
+    font-family: var(--kyiv);
+    font-size: .5rem;
+    font-weight: 400;
+    color: var(--midgreen);
+    transform: translateY(-6px);
+}
+
+.adscard-body{
+    width: 50%;
+}
+
+.old-price, .new-price{
+    color: white;
+    font-family: var(--kyiv);
+}
+
+.old-price{
+    font-size: .625rem;   
+}
+
+.old-price span{
+    text-decoration: line-through;
+}
+
+.new-price{
+    font-size: .75rem;
+}
+
+.btn-success{
+    background-color: var(--green);
+    border: none;
+}
+
+.adscard-btn{
+    font-size: .625rem;
+}
+
