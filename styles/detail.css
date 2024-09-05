@@ -1,0 +1,23 @@
+.product-image {
+    width: 300px;
+    height: auto;
+}
+.product-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.product-icon {
+    font-size: 1.5rem;
+    color: gold;
+}
+.quantity-label {
+    color: #6c757d;
+}
+
+@media (min-width: 768px){
+    .product-image, .product-title, .product-icon{
+        margin-top: 100px;
+    }
+
+    .
+}

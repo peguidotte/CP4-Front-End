@@ -41,6 +41,10 @@
     background-color: var(--lightgreen);
     border: none;
     border-radius: none;
+    max-width: 1800px;
+    width: clamp(300px, 100%, 1700px);
+    margin: auto;
+    align-items: center;
 }
 
 .adscard-title{
@@ -86,5 +90,65 @@
 
 .adscard-btn{
     font-size: .625rem;
+}
+
+@media (min-width: 600px) {
+    .adscard-title{
+        font-size: 1.25rem;
+    }
+    
+    .adscard-text{
+        font-size: 1rem;
+    }
+    
+    .adscard-body{
+        width: 30%;
+    }
+    
+    .old-price{
+        font-size: 1rem;
+    }
+
+    .new-price{
+        font-size: 1.25rem;
+    }   
+
+    .adscard-btn{
+        font-size: 1rem;
+    }
+
+    .ads-img{
+        width: 125px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .adscard-title{
+        font-size: 1.875rem; /* 1.25rem * 1.5 */
+    }
+    
+    .adscard-text{
+        font-size: 1.5rem; /* 1rem * 1.5 */
+    }
+    
+    .adscard-body{
+        width: 45%; /* 30% * 1.5 */
+    }
+    
+    .old-price{
+        font-size: 1.5rem; /* 1rem * 1.5 */
+    }
+
+    .new-price{
+        font-size: 1.875rem; /* 1.25rem * 1.5 */
+    }   
+
+    .adscard-btn{
+        font-size: 1.5rem; /* 1rem * 1.5 */
+    }
+
+    .ads-img{
+        width: 187.5px; /* 125px * 1.5 */
+    }
 }
 

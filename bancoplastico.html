@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="/styles/detail.css">
+    <title>EcoTrend</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="/Assets/EcoTrend.svg" alt="EcoTrend Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <img src="/Assets/VectorMenu.svg" alt="Menu">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html"><img src="/Assets/VectorHome.png"
+                                alt="Home">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="/Assets/VectorCategory.png" alt="Categorias"> Categorias
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cartDropdown">
+                            <li><a href="index.html#Roupas" class="dropdown-item">Roupas</a></li>
+                            <li><a href="index.html#Beleza" class="dropdown-item">Beleza</a></li>
+                            <li><a href="index.html#Casa" class="dropdown-item">Casa</a></li>
+                            <li><a href="index.html#Tecnologia" class="dropdown-item">Tecnologia</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#Form" tabindex="-1" aria-disabled="true"><img
+                                src="/Assets/VectorTalk.png" alt="">Fale Conosco</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="/Assets/VectorShop.svg" alt="Carrinho de compras"> Carrinho
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cartDropdown">
+                            <li class="dropdown-item disabled">Suas compras aparecerão aqui.</li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <div class="container row align-items-center">
+                                <li class="col dropdown-item">Total: R$00.00</li>
+                                <button type="button" class="btn btn-outline-success col-4">Editar</button>
+                            </div>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container mt-5 container-product">
+        <div class="row">
+            <div class="col-12 col-md-6 mb-4 mb-md-0">
+                <img src="/Assets/Casa/BanquinhoPlasticoReciclavel.svg" alt="Banco EcoWood"
+                    class="product-image">
+            </div>
+            <div class="col-12 col-md-6 d-flex flex-column justify-content-between">
+                <div>
+                    <div class="d-flex align-items-center mb-3">
+                        <h1 class="product-title">Banco de Plástico Reciclado</h1>
+                        <span class="product-icon ms-2">&#9733;</span>
+                    </div>
+                    <p class="">O Banquinho EcoWood é uma peça versátil e sustentável, projetada para combinar
+                        resistência e estilo. Fabricado a partir de plástico reciclado, este banquinho possui um
+                        acabamento que imita madeira, oferecendo uma estética natural e elegante. Ideal tanto para
+                        ambientes internos quanto externos, o EcoWood é perfeito para quem busca uma solução ecológica
+                        sem abrir mão da durabilidade. Seu design robusto e sua construção sustentável fazem dele uma
+                        escolha excelente para quem valoriza a combinação de funcionalidade e respeito ao meio ambiente.
+                    </p>
+                    <p class="">R$108,00</p>
+                    <p class="quantity-label">Quantidade: 7</p>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-success btn-lg mb-5 mt-3" data-bs-toggle="modal"
+                        data-bs-target="#ComprarModal">
+                        Comprar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer-container mt-5 py-4">
+        <div class="container mt-5">
+            <div class="row text-center text-md-start">
+                <div class="col-md-4 mb-4 mb-md-3">
+                    <a href="" class="text-white me-3">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram" width="30">
+                    </a>
+                    <a href="" class="text-white">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png" alt="LinkedIn" width="30">
+                    </a>
+                </div>
+
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5 class="footer-title">Informações de Contato</h5>
+                    <ul class="list-unstyled footer-list">
+                        <li>Email: ecotrend@eco.com</li>
+                        <li>Telefone: (11) 98751-5678</li>
+                        <li>Endereço: Rua Voluntários, 5570, São Paulo, SP</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h5 class="footer-title">Políticas da Loja</h5>
+                    <ul class="list-unstyled footer-list">
+                        <li><a href="#" class="">Política de Privacidade</a></li>
+                        <li><a href="#" class="">Política de Trocas e Devoluções</a></li>
+                        <li><a href="#" class="">Termos e Condições</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p class="mb-0">&copy; 2024 EcoTrend. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--Modal Botão Comprar-->
+    <div class="modal fade" id="ComprarModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Adicionado ao carrinho!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Muito Obrigado! Confira os outros produtos antes de encerrar a compra!
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+</htm
