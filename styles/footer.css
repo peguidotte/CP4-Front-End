@@ -1,0 +1,17 @@
+.footer-container{
+    
+    border-top: 1px solid var(--lightgreen);
+    color: black;
+    
+}
+
+.footer-title{
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+    font-family: var(--kyiv);
+    color: var(--darkgreen);
+}
+
+.footer-list li, .footer-list a{
+    color: var(--midgreen);
+}

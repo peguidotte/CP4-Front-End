@@ -14,3 +14,7 @@
 body{
     background-color: var(--white);
 }
+
+header {
+    position: static; /* Evita conflito com sticky */
+}

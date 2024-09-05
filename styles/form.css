@@ -1,0 +1,22 @@
+.form{
+    background-color: var(--lightgreen);
+    padding: 20px;
+}
+
+.titulo-form{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: var(--kyiv);
+}
+
+.btn-form{
+    background-color: var(--green);
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: var(--kyiv);
+    font-size: 1.2rem;
+}

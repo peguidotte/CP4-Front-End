@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="/styles/header.css">
     <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/form.css">
+    <link rel="stylesheet" href="/styles/footer.css">
     <title>EcoTrend</title>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="/Assets/EcoTrend.svg" alt="EcoTrend Logo">
@@ -29,11 +30,20 @@
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="#">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Categorias</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="/Assets/VectorShop.svg" alt="Carrinho de compras"> Categorias
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="cartDropdown">
+                                <li><a href="#Roupas" class="dropdown-item">Roupas</a></li>
+                                <li><a href="#Beleza" class="dropdown-item">Beleza</a></li>
+                                <li><a href="#Casa" class="dropdown-item">Casa</a></li>
+                                <li><a href="#Tecnologia" class="dropdown-item">Tecnologia</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Fale Conosco</a>
+                            <a class="nav-link" href="#Form" tabindex="-1" aria-disabled="true">Fale Conosco</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -55,6 +65,8 @@
                 </div>
             </div>
         </nav>
+    <header>
+        
         <div class="d-flex flex-column justify-content-center align-items-center">
             <h2 class="mt-4 heading2">Estilo Sustentável <img src="/Assets/VectorLeaf.svg" alt=""></h2>
             <h1 class="heading1"><img src="/Assets/VectorLeaf.svg" alt="">Futuro Verde</h1>
@@ -224,7 +236,7 @@
                     <img src="https://cdn.awsli.com.br/300x300/1744/1744624/produto/215738267/boardshorts-sustentavel-masculino-elastico-caqui-frutoze-2-im81pinfcf.jpg" class="card-img-top" alt="...">
                     <div class="border-bottom border-1 border-verde"></div>
                     <div class="card-body card-body-produto">
-                        <h5 class="card-title card-title-produto">Shorts de Poliéster</h5>
+                        <h5 class="card-title card-title-produto">Shorts de Poliéster Reciclado</h5>
                         <h5 class="card-price">R$98,99</h5>
                         <div>
                             <button type="button" class="btn btn-success adscard-btn" data-bs-toggle="modal"
@@ -265,7 +277,7 @@
             </div>
         </section>
         <section id="Beleza" class="mt-5">
-            <h2 class="align-text-bottom titulo-categoria">Beauty <img src="/Assets/Beleza/VectorBeauty.svg" alt=""></h2>
+            <h2 class="align-text-bottom titulo-categoria">Beleza <img src="/Assets/Beleza/VectorBeauty.svg" alt=""></h2>
             <div class="row gap-2 justify-content-center grid-produtos">
                 <div class="card card-produto">
                     <img src="/Assets/Beleza/ProdutosBeautyAmarelo.svg" class="card-img-top" alt="ProdutosBeautyAmarelo">
@@ -443,7 +455,7 @@
             </div>
         </section>
         <section id="Tecnologia" class="mt-5">
-            <h2 class="align-text-bottom titulo-categoria">Tecnologia <img src="/Assets/Casa/VectorHouse.png" alt=""></h2>
+            <h2 class="align-text-bottom titulo-categoria">Tecnologia <img src="/Assets/VectorTech.png" alt=""></h2>
             <div class="row gap-2 justify-content-center grid-produtos">
                 <div class="card card-produto">
                     <img src="https://th.bing.com/th/id/OIP.Kz6QFGLxXZFtNz69IinrqAHaHa?rs=1&pid=ImgDetMain" class="card-img-top" alt="ProdutosBeautyAmarelo">
@@ -532,6 +544,70 @@
             </div>
         </section>
     </main>
+    <aside></aside>
+    <section class="container my-5 form" id="Form">
+        <h2 class="text-center mb-4 titulo-form">Fale Conosco</h2>
+        <form>
+            <div class="mb-3">
+                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
+            </div>
+    
+            <div class="mb-3">
+                <input type="email" class="form-control" id="email" placeholder="Digite seu email" required>
+            </div>
+    
+            <div class="mb-5">
+                <input type="text" class="form-control" id="assunto" placeholder="Digite o assunto" required>
+            </div>
+    
+            <div class="mb-3">
+                <textarea class="form-control" id="mensagem" rows="5" maxlength="1000" placeholder="Escreva sua mensagem (até 1000 caracteres)" required></textarea>
+                <small class="form-text text-muted">Máximo de 1000 caracteres.</small>
+            </div>
+    
+            <div class="text-center">
+                <button type="submit" class="btn btn-success btn-form">Enviar</button>
+            </div>
+        </form>
+    </section>
+    <footer class="footer-container py-4">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <div class="col-md-4 mb-4 mb-md-3">
+                    <a href="" class="text-white me-3">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram" width="30">
+                    </a>
+                    <a href="" class="text-white">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png" alt="LinkedIn" width="30">
+                    </a>
+                </div>
+    
+                <!-- Contact Information -->
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5 class="footer-title">Informações de Contato</h5>
+                    <ul class="list-unstyled footer-list">
+                        <li>Email: ecotrend@eco.com</li>
+                        <li>Telefone: (11) 98751-5678</li>
+                        <li>Endereço: Rua Voluntários, 5570, São Paulo, SP</li>
+                    </ul>
+                </div>
+    
+                <div class="col-md-4">
+                    <h5 class="footer-title">Políticas da Loja</h5>
+                    <ul class="list-unstyled footer-list">
+                        <li><a href="#" class="">Política de Privacidade</a></li>
+                        <li><a href="#" class="">Política de Trocas e Devoluções</a></li>
+                        <li><a href="#" class="">Termos e Condições</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p class="mb-0">&copy; 2024 EcoTrend. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
+    
 
 
     <!--Modal Botão Comprar-->
