@@ -1,20 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=KyivType+Sans&display=swap');
-
-:root{
-    --darkgreen: #254012;
-    --midgreen: #365912;
-    --green: #688c1b;
-    --lightgreen: #ADBF9B;
-    --white: #F2F2F2;
-    --krona: 'Krona One', 'sans-serif';
-    --kyiv: 'KyivType Sans', 'sans-serif';
-}
-
-body{
-    background-color: var(--white);
-}
-
 .navbar{
     align-items:flex-end;
     justify-content: space-around;
